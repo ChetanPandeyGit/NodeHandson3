@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h3>Welcome to <%= title %></h3>
+    <h4 >SUBMIT YOUR DETAILS</h4>
+    <form action="/submit" method="POST">
+        <input type="text" placeholder="NAME" name="name" required><br><br>
+        <input type="email" placeholder="EMAIL" name="email" required><br><br>
+        <input type="text" placeholder="NUMBER OF PEOPLE" name="number" required><br><br>
+        <input type="checkbox" required>
+        <small>I agree that my submitted data is being collected and stored.</small> <br><br>
+        <input type="submit" value="Submit Your Details">  
+    </form>
+  </body>
+</html>
